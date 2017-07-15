@@ -1,0 +1,67 @@
+.header{
+	display: flex;
+	height: 80px;
+	background-color: #ccc;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 10px;
+}
+.topic{
+	display: flex;
+	align-items: center;
+	padding: 5px 0;
+}
+.topic>div{
+	flex-grow: 1;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.topic h3{
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.topic .tab{
+	background-color: #ffc107;
+	margin-right: 10px;
+	padding: 0 4px;
+	border-radius: 2px;
+	color: #fff;
+}
+
+/*返回顶部样式*/
+.ant-back-top{
+	right:30px !important;
+}
+
+.topic-desc{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	border-bottom: 1px  solid #eee;
+	padding-bottom: 10px;
+}
+
+/*文章样式*/
+.topic-wrap{
+	line-height: 1.7
+}
+.topic-wrap img{
+	width: 100%;
+}
+
+/*评论样式*/
+.comments{
+	display: flex;
+}
+.comments>span{
+	margin-right: 10px;
+	flex-shrink: 0;
+}
+.comments-right{
+	flex-grow: 1;
+}
+.comments-header{
+	display: flex;
+	justify-content: space-between;
+}
