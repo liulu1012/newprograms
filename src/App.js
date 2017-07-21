@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter,Route} from 'react-router-dom'
+import {HashRouter,Route} from 'react-router-dom'
 import Home from './component/Home.js'
 import Topic from './component/Topic'
 import Header from './component/Header'
@@ -10,7 +10,7 @@ import User from './component/User'
 class App extends React.Component{
 	render(){
 		return(
-			<BrowserRouter>
+			<HashRouter>
 				<div>
 					<Header />
 					<div style={{minHeight:'300px'}}>
@@ -21,7 +21,7 @@ class App extends React.Component{
 					</div>
 					<p>cnode footer</p>
 				</div>
-			</BrowserRouter>
+			</HashRouter>
 		)
 	}
 }
