@@ -10,14 +10,14 @@ class ShowTopics extends React.Component{
 			job: '招聘',
 			share: '分享'
 		}
-		// console.log(data)
+		console.log(data)
 		return(
 			<div className='topics'>
 				{
 					data.length===0?<div><Spin size="large" /></div>:
 					data.map(item=>(
 						<div key={item.id} className='topic'>
-							 <span><Avatar src={item.author.avatar_url} shape="square"/></span>&nbsp;&nbsp;
+							 <Link to={`/user/${item.author.loginname}`}><Avatar src={item.author.avatar_url} shape="square"/></Link>&nbsp;&nbsp;
 							 	<span className='tab'>{item.top?'置顶':item.good?'精华':tabs[item.tab]}</span>
 							 	<span style={{fontWeight:'bold',fontSize:'16px'}}>{item.reply_count}</span>
 							 	<span>/{item.visit_count}</span>&nbsp;&nbsp;

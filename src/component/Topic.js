@@ -74,7 +74,7 @@ class Topic extends React.Component{
 	}
 	render(){
 		let {data,comment,visible,reply,replyInfo} = this.state
-		console.log(data)
+		// console.log(data)
 		return(
 			<div className='topics' style={{padding:'10px'}}>
 				<Card loading={!data} style={{ width: '100%' }}>
